@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:text="Hello World!"
+        android:background="#ff0000"
+        android:layout_width="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="Hello World!"
+        android:background="#ffff00"
+        android:layout_width="39.4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--39.4/25.4*422=655px-->
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="Hello World!"
+        android:background="#ffff00"
+        android:layout_width="1.5in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--    1.5*422=633px-->
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:text="Hello World!"
+        android:background="#ffff00"
+        android:layout_width="65.4mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--69.4/25.4*422=1087px-->
+</LinearLayout>
