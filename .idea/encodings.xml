@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/designmode/TestDecorator.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/designmode/TestFactory.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/designmode/TestSingleTon.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/gaojie/MyAnnotation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/gaojie/TestReflection.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/RBTree.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/RBTreeTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/Test.java" charset="GBK" />

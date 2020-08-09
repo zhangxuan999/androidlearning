@@ -15,19 +15,19 @@ import javaproject.Person;
 @Target(value = {ElementType.METHOD})
 @Documented
 public @interface MyAnnotation {
-//    å®šä¹‰ annotation type element
-//    ()é‡Œé¢ä¸èƒ½æœ‰å‚æ•°ï¼Œåªæ˜¯ç‰¹æ®Šçš„è¯­æ³•
+//    ¶¨Òå annotation type element
+//    ()ÀïÃæ²»ÄÜÓĞ²ÎÊı£¬Ö»ÊÇÌØÊâµÄÓï·¨
     int age();
 
     char hsh();
 
     String shssh();
 
-    String[] sshshh();
+//    String[] sshshh();
 //    String[][] sshshhss();
 
-//    ä¸èƒ½æ˜¯å…¶ä»–ç±»å‹ï¼Œä¾‹å¦‚personï¼Œè¯¥å…ƒç´ çš„ç±»å‹åªèƒ½æ˜¯åŸºæœ¬æ•°æ®ç±»å‹ã€Stringã€Class
-//    ã€æšä¸¾ç±»å‹ã€æ³¨è§£ç±»å‹ï¼ˆä½“ç°äº†æ³¨è§£çš„åµŒå¥—æ•ˆæœï¼‰ä»¥åŠä¸Šè¿°ç±»å‹çš„ä¸€ç»´æ•°ç»„
+//    ²»ÄÜÊÇÆäËûÀàĞÍ£¬ÀıÈçperson£¬¸ÃÔªËØµÄÀàĞÍÖ»ÄÜÊÇ»ù±¾Êı¾İÀàĞÍ¡¢String¡¢Class
+//    ¡¢Ã¶¾ÙÀàĞÍ¡¢×¢½âÀàĞÍ£¨ÌåÏÖÁË×¢½âµÄÇ¶Ì×Ğ§¹û£©ÒÔ¼°ÉÏÊöÀàĞÍµÄÒ»Î¬Êı×é
 //    Person person();
 
 }
