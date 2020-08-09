@@ -63,8 +63,9 @@ public class RBTree<T extends Comparable<T>> {
             node.color = RED;
     }
     private void setParent(RBTNode<T> node, RBTNode<T> parent) {
-        if (node!=null)
+        if (node!=null) {
             node.parent = parent;
+        }
     }
     private void setColor(RBTNode<T> node, boolean color) {
         if (node!=null)

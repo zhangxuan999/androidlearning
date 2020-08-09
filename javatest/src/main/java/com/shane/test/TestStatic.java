@@ -16,7 +16,7 @@ public static void main(String[] args) {
 	Person person1 = new Person(1);
 	TestStatic.setPerson(person1);
 	Person person2 = TestStatic.getPerson();
-	
+	System.out.println(person2 == person1);
 	Person person3 = new Person(2);
 	TestStatic.setPerson(person3);
 	

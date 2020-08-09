@@ -32,8 +32,8 @@ public static String reverse(String original){
 	
 }
 
-//fanzhuanzifuchan
-public static String reverse2(String original){
+//翻转字符串
+ public static String reverse2(String original){
 	
 	if (original == null) {
 		return null;
@@ -56,7 +56,7 @@ public static String reverse2(String original){
 }
 
 
-//fanzhuanzifuchan
+//翻转字符串
 public static String reverse3(String original){
 	
 	if (original == null) {

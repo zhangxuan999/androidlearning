@@ -1,0 +1,9 @@
+hashcode 和equals
+重写的时候要保证equals，那么hashcode是要相等的
+但是hashcode相等，却不一定equals。存在hash碰撞
+.hashmap在put的时候，如果hashcode相等，那么再判断是否equals，如果不equals，那么在同一槽位增加一个key，
+如果hashcode相等，且euqals的话，那么就会替换。
+因此可以理解hashcode本质作用是用散列算法，让hashcode分散在不同的槽位。
+如果只写equals，但是hashcode不复写的话，默认是对象的物理地址，那么就算equals了，也会put两个，会导致只能通过key原本对象来找到这个value。
+如果只写equals，但是hashcode一直返回同一个值的话，会导致所有的key都在同一个槽位。
+如果不复写equals，但是hashcode复写的话，那么两个内容一样的key，hashcode一样，但是不equals，那么再同一槽位增加一个key。

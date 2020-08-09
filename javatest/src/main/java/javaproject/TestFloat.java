@@ -1,12 +1,23 @@
 package javaproject;
 
+/**
+ * float的二进制表示，float占位32位
+ */
 public class TestFloat {
 	public static void main(String[] args) {
 		float f = (float) -0.5;
 		System.out.println(Integer.toBinaryString(Float.floatToIntBits(f)));
-		
-		
+
+		System.out.println(0b01111110);
+
+//		（-1）的S次方 *1.M * 2的（E-127）次方
 //浮点数二进制表示
+//		分三段
+//		第一段1位  s 表示正负
+//		第二段8位 e 指数位
+//		第三段23位 m 尾数
+//		0.5 = （-1）的0次方 * 1.0*2的负1次方
+//		因此S = 0；e = 126；m = 0；
 //		0 01111101  00000000000000000000000   0.25
 //		0 01111110  00000000000000000000000   0.5
 //		0 01111110  10000000000000000000000   0.75

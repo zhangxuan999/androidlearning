@@ -23,7 +23,7 @@ public static void main(String[] args) {
 	System.out.println(a[i = 3 -2] + "i = " + i);
 	
 }
-//Ç§Íò²»ÄÜÕâÑùÉ¾£¬ÒªÍ¨¹ıarraylistµÄiteratorÀ´É¾³ı
+//åƒä¸‡ä¸èƒ½è¿™æ ·åˆ ï¼Œè¦é€šè¿‡arraylistçš„iteratoræ¥åˆ é™¤
 public static void delete(ArrayList<Integer> al){
 //	for (int i = 0; i < al.size(); i++) {
 //		if (al.get(i)%2 == 0) {
