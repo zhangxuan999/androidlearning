@@ -1,7 +1,10 @@
 package javaproject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 import org.omg.CORBA.PUBLIC_MEMBER;
 
@@ -16,20 +19,21 @@ public static void main(String[] args) {
 	alArrayList.add(9);
 	alArrayList.add(11);
 	alArrayList.add(18);
-	//delete(alArrayList);
+	delete(alArrayList);
 	
-	int a [] = {1,2,3,4,5};
-	int i = 0;
-	System.out.println(a[i = 3 -2] + "i = " + i);
+//	int a [] = {1,2,3,4,5};
+//	int i = 0;
+//	System.out.println(a[i = 3 -2] + "i = " + i);
 	
 }
-//åƒä¸‡ä¸èƒ½è¿™æ ·åˆ ï¼Œè¦é€šè¿‡arraylistçš„iteratoræ¥åˆ é™¤
+//Ç§Íò²»ÄÜÕâÑùÉ¾£¬ÒªÍ¨¹ıarraylistµÄiteratorÀ´É¾³ı
 public static void delete(ArrayList<Integer> al){
 //	for (int i = 0; i < al.size(); i++) {
 //		if (al.get(i)%2 == 0) {
 //			al.remove(i);
 //		}
 //	}
+
 	for (Iterator iterator = al.iterator(); iterator.hasNext();) {
 		Integer integer = (Integer) iterator.next();
 		

@@ -10,7 +10,7 @@
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/RBTree.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/RBTreeTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/Test.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestArrayList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestArrayList.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestBianma.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestCommon.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestCustomer.java" charset="GBK" />
@@ -19,7 +19,9 @@
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestMatrix.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestQuanpai.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestQueue.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestSort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestStack.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestString.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestThread.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/TestThreadLocal.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/javatest/src/main/java/javaproject/Testfuhao.java" charset="GBK" />

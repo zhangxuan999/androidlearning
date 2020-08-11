@@ -1,8 +1,11 @@
 package javaproject;
 
+/**
+ * ·­×ª×Ö·û´®µÄÈıÖÖ·½·¨ºÍStringµÄÒ»Ğ©³£Ê¶
+ */
 public class TestString {
 public static void main(String[] args) {
-//	String aString = "abcfdef";
+//	String aString = "abcfdefÎÒ";
 //	System.out.println(reverse(aString));
 //	
 //	
@@ -10,12 +13,15 @@ public static void main(String[] args) {
 //	System.out.println(reverse2(aString));
 //	
 //	
-//	String cString = "abcfdef";
-//	System.out.println(reverse3(cString));
-	test1();
+	String cString = "abcfdef";
+	System.out.println(reverse3(cString));
+//	test1();
 	
 }
-//fanzhuanzifuchan
+//·­×ª×Ö·û´®
+//	Ë¼Â·1.
+//	1.½«stringÍ¨¹ıStringµÄtoCharArray·½·¨×ª»»ÎªcharÊı×é
+//	2.Í¨¹ıStringµÄvalueOf·½·¨½«Ò»¸öcharÊı×é×ª»»ÎªString
 public static String reverse(String original){
 	
 	if (original == null) {
@@ -32,7 +38,10 @@ public static String reverse(String original){
 	
 }
 
-//ç¿»è½¬å­—ç¬¦ä¸²
+//·­×ª×Ö·û´®
+//	Ë¼Â·2.1½«stringÍ¨¹ıStringµÄtoCharArray·½·¨×ª»»ÎªcharÊı×é
+//	2¡£¶¨ÒåÁ½¸öÖµÒ»¸öleftÎª0£¬µÚÒ»¸ö½Ç±ê£¬rightÎª×îºóÒ»¸ö½Ç±ê£¬ÕâÁ½¸ö½Ç±êµÄchar»¥»»
+//	3.Í¨¹ıStringµÄvalueof·½·¨½«char×ªÎªÎªString
  public static String reverse2(String original){
 	
 	if (original == null) {
@@ -56,7 +65,10 @@ public static String reverse(String original){
 }
 
 
-//ç¿»è½¬å­—ç¬¦ä¸²
+//·­×ª×Ö·û´®
+//	Ë¼Â·3 1.Í¨¹ıStringµÄcharAt·½·¨È¡µ½Ã¿¸öÎ»ÖÃµÄchar
+//	2.±éÀú
+//	3.Ã¿´Î±éÀú½«µ±Ç°µÄchar¼ÓÉÏÖ®Ç°µÄString£¬¾Í¿ÉÒÔÊµÏÖ·­×ª
 public static String reverse3(String original){
 	
 	if (original == null) {
@@ -69,7 +81,11 @@ public static String reverse3(String original){
 	return bString;
 	
 }
-public static void test1(){
+
+	/**
+	 * string Ïà¹Ø
+	 */
+	public static void test1(){
 String a = "abc";
 String b = "abc";
 String c = new String("abc");
@@ -78,19 +94,19 @@ String e = "ab";
 String f = "c";
 String g = e + "c";
 String h = e + f;
-System.out.println(a == b);
-System.out.println(a == c);
-System.out.println(a == d);
-System.out.println(a == g);
-System.out.println(a == h);
+System.out.println(a == b);//true aÓëbÏàµÈ
+System.out.println(a == c);//false aÓëc²»µÈ
+System.out.println(a == d);//true aÓëdÏàµÈ
+System.out.println(a == g);//a Óëg²»ÏàµÈ£¬ÒòÎªg°üº¬±äÁ¿Æ´½Ó¶ø³É
+System.out.println(a == h);//a Óë h²»ÏàµÈ¡£ÒòÎªh°üº¬±äÁ¿Æ´½Ó¶ø³É
 
 
 String aString  = new String("111");
 String bString = aString;
 String cString = new String("111");
 
-System.out.println(aString == bString);
-System.out.println(aString.equals(cString));
-System.out.println(aString.hashCode() == cString.hashCode());
+System.out.println(aString == bString);//true ÎŞÒÉÎÊ
+System.out.println(aString.equals(cString));//true StringÖØĞ´ÁËequals·½·¨
+System.out.println(aString.hashCode() == cString.hashCode());//true StringÖØĞ´ÁËhashCode·½·¨£¬equals±ØÈ»hashcodeÏàµÈ
 }
 }
