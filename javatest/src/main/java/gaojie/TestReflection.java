@@ -26,27 +26,38 @@ public class TestReflection {
     public static void main(String[] args) {
         Class<AAA> aaaClass = AAA.class;
         try {
-            AAA aaa = aaaClass.newInstance();
+            AAA aaa = aaaClass.newInstance();//调用无参的构造方法
+            System.out.println("---------getMethods---------");
             for (Method method : aaaClass.getMethods()) {
                System.out.println(method.toString());
             }
             ;
-            System.out.println("---------zxzx---------");
+            System.out.println("---------getDeclaredFields---------");
             for (Field field : aaaClass.getDeclaredFields()) {
                 System.out.println(field.toString());
             }
             ;
+            System.out.println("---------setField---------");
             Field a = aaaClass.getDeclaredField("a");
             //私有属性
             a.setAccessible(true);
             Object o = a.get(aaa);
             System.out.println((Integer) o);
 
+            System.out.println("---------getDeclaredMethod---------");
             Method getA = aaaClass.getDeclaredMethod("getA");
+            MyAnnotation myAnnotation = getA.getAnnotation(MyAnnotation.class);//得到getA方法使用到的注解
+            if (myAnnotation != null) {
+                Class<?>[] parameterTypes = getA.getParameterTypes();//得到getA方法的参数
+                System.out.println("---------getDeclaredMethod parameterTypes.length---------"+ parameterTypes.length);
+                System.out.println("---------getDeclaredMethod myAnnotation.age()---------"+ myAnnotation.age());
+                System.out.println("---------getDeclaredMethod myAnnotation.hsh()---------"+ myAnnotation.hsh());
+                System.out.println("---------getDeclaredMethod myAnnotation.shssh()---------"+ myAnnotation.shssh());
+            }
             //方法调用
-            System.out.println(getA.invoke(aaa));
+            System.out.println(getA.invoke(aaa));//aaa调用getA方法
 //            newInstance()底层就是调用无参构造方法的newInstance()
-
+            aaaClass.getDeclaredAnnotations();//AAA这个类上的注解
             for (Annotation annotation : aaaClass.getDeclaredAnnotations()) {
                 System.out.println(annotation.toString());
             }
@@ -60,7 +71,7 @@ public class TestReflection {
     }
 }
 
-
+@Deprecated
 class AAA{
     int a = 5;
     int b;
@@ -81,13 +92,14 @@ class AAA{
     }
 
 
-    @MyAnnotation(age = 1, hsh ='a' , shssh ="" )
+    @MyAnnotation(age = 1, hsh ='a' , shssh ="",stringArray = {"111","222"})
     public int getA() {
         return a;
     }
 
     public void setA(int a) {
-        this.a = a;
+
+         this.a = a;
     }
 
     public int getB() {

@@ -15,6 +15,8 @@ import android.widget.Button;
 
 import com.chujian.mytest.R;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 subThreadHandler.sendEmptyMessage(22);
+                EventBus.getDefault().post(new EventBusMessage(3,"message three"));
 
             }
         });

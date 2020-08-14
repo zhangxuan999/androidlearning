@@ -124,4 +124,47 @@ public class TaskExecutor {
             return mThreadPoolExecutor;
         }
     }
+
 }
+
+/**
+ * 线程池主要方法 new ThreadPoolExecutor（int corePoolSize,  核心线程数
+ *                               int maximumPoolSize, 最大线程数
+ *                               long keepAliveTime,
+ *                               TimeUnit unit,
+ *                               BlockingQueue<Runnable> workQueue,队列
+ *                               ThreadFactory threadFactory）
+ * 然后调用 ThreadPoolExecutor对象的submit方法
+ *
+ * newCachedThreadPool创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。
+ *
+ *
+ * newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。
+ *
+ *
+ * newScheduledThreadPool 创建一个定长线程池，支持定时及周期性任务执行。
+ *
+ *
+ * newSingleThreadExecutor 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行。
+ *
+ * 核心线程数1，最大线程数1
+ * new ThreadPoolExecutor(1, 1,0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>())
+ *
+ * newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。
+*  ThreadPoolExecutor(nThreads, nThreads,0L, TimeUnit.MILLISECONDS,
+*                                       new LinkedBlockingQueue<Runnable>(),
+*                                       threadFactory)
+ *
+ * newCachedThreadPool创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。
+ * 线程池为无限大，当执行第二个任务时第一个任务已经完成，会复用执行第一个任务的线程，而不用每次新建线程。
+ * new ThreadPoolExecutor(0, Integer.MAX_VALUE,60L, TimeUnit.SECONDS,new SynchronousQueue<Runnable>());
+ *
+ *
+ *newScheduledThreadPool 创建一个定长线程池，支持定时及周期性任务执行。
+ * new ThreadPoolExecutor(corePoolSize, Integer.MAX_VALUE,DEFAULT_KEEPALIVE_MILLIS, MILLISECONDS,new DelayedWorkQueue());
+ *
+ * ScheduledExecutorService
+ * ScheduledThreadPoolExecutor
+ * ExecutorService
+ * ThreadPoolExecutor
+*/

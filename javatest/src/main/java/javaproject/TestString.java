@@ -108,5 +108,9 @@ String cString = new String("111");
 System.out.println(aString == bString);//true 无疑问
 System.out.println(aString.equals(cString));//true String重写了equals方法
 System.out.println(aString.hashCode() == cString.hashCode());//true String重写了hashCode方法，equals必然hashcode相等
+
+
+		String[] arr = {"111","222"};//string数组初始化 这种方式是声明的同时赋值
+		String[] arr2 = new String[]{"111","222"};//string数组初始化
 }
 }

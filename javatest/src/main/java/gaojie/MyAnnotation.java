@@ -16,18 +16,18 @@ import javaproject.Person;
 @Documented
 public @interface MyAnnotation {
 //    定义 annotation type element
-//    ()里面不能有参数，只是特殊的语法
+//    ()里面不能有参数，()只是特殊的语法
     int age();
 
     char hsh();
 
     String shssh();
 
-//    String[] sshshh();
-//    String[][] sshshhss();
+    String[] stringArray();
+//    String[][] sshshhss();wrong
 
 //    不能是其他类型，例如person，该元素的类型只能是基本数据类型、String、Class
 //    、枚举类型、注解类型（体现了注解的嵌套效果）以及上述类型的一维数组
-//    Person person();
+//    Person person();wrong
 
 }
