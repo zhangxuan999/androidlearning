@@ -5,43 +5,43 @@ import java.nio.charset.Charset;
 
 public class TestBianma {
 public static void main(String[] args) {
-	String a = "ä¸¥";
+	String a = "ÑÏ";
 	
 			try {
-			System.out.println("ç¼–ç ä¸­æ–‡å­—ç¬¦æ‰€å å­—èŠ‚æ•°:"
+			System.out.println("±àÂëÖĞÎÄ×Ö·ûËùÕ¼×Ö½ÚÊı:"
 					+ a.getBytes("unicode").length);
-/*			System.out.println("ç¼–ç ä¸­æ–‡å­—ç¬¦æ‰€å å­—èŠ‚æ•°:"
+/*			System.out.println("±àÂëÖĞÎÄ×Ö·ûËùÕ¼×Ö½ÚÊı:"
 					+ Ch);*/
-/*			System.out.println("ç¼–ç ä¸­æ–‡å­—ç¬¦æ‰€å å­—èŠ‚æ•°:"
+/*			System.out.println("±àÂëÖĞÎÄ×Ö·ûËùÕ¼×Ö½ÚÊı:"
 					+ b.length());*/
 			System.out.println();
 		} catch (Exception e) {
-			System.out.println("éæ³•ç¼–ç æ ¼å¼ï¼");
+			System.out.println("·Ç·¨±àÂë¸ñÊ½£¡");
 		}
 			
 			
 			
-			//è·å–ç³»ç»Ÿé»˜è®¤ç¼–ç 
-			System.out.println("ç³»ç»Ÿé»˜è®¤ç¼–ç ï¼š    "+System.getProperty("file.encoding"));//æŸ¥è¯¢ç»“æœGBK
-			//ç³»ç»Ÿé»˜è®¤å­—ç¬¦ç¼–ç 
-			System.out.println("ç³»ç»Ÿé»˜è®¤å­—ç¬¦ç¼–ç :"+Charset.defaultCharset());
+			//»ñÈ¡ÏµÍ³Ä¬ÈÏ±àÂë
+			System.out.println("ÏµÍ³Ä¬ÈÏ±àÂë£º    "+System.getProperty("file.encoding"));//²éÑ¯½á¹ûGBK
+			//ÏµÍ³Ä¬ÈÏ×Ö·û±àÂë
+			System.out.println("ÏµÍ³Ä¬ÈÏ×Ö·û±àÂë:"+Charset.defaultCharset());
 			
 			
-			//æ“ä½œç³»ç»Ÿç”¨æˆ·ä½¿ç”¨çš„è¯­è¨€
-			System.out.println("ç³»ç»Ÿé»˜è®¤è¯­è¨€:"+ System.getProperty("user.language")); //æŸ¥è¯¢ç»“æœzh
-			//å®šä¹‰å­—ç¬¦ä¸²åŒ…å«æ•°å­—å’Œä¸­æ–‡
-	       String t = "ç‡•";
-	       //é€šè¿‡getBytesæ–¹æ³•è·å–é»˜è®¤çš„ç¼–ç 
-	       System.out.println("é»˜è®¤ç¼–ç æ ¼å¼:");
-	       byte[] b = t.getBytes();//ASCII,GBK,UTF-8å¯¹æ•°å­—å’Œè‹±æ–‡å­—æ¯çš„ç¼–ç ç›¸åŒ,å¯¹æ±‰å­—çš„ç¼–ç ä¸åŒ,unicodeçš„ç¼–ç è·Ÿå‰é¢ä¸‰é¡¹éƒ½ä¸åŒ
+			//²Ù×÷ÏµÍ³ÓÃ»§Ê¹ÓÃµÄÓïÑÔ
+			System.out.println("ÏµÍ³Ä¬ÈÏÓïÑÔ:"+ System.getProperty("user.language")); //²éÑ¯½á¹ûzh
+			//¶¨Òå×Ö·û´®°üº¬Êı×ÖºÍÖĞÎÄ
+	       String t = "Ñà";
+	       //Í¨¹ıgetBytes·½·¨»ñÈ¡Ä¬ÈÏµÄ±àÂë
+	       System.out.println("Ä¬ÈÏ±àÂë¸ñÊ½:");
+	       byte[] b = t.getBytes();//ASCII,GBK,UTF-8¶ÔÊı×ÖºÍÓ¢ÎÄ×ÖÄ¸µÄ±àÂëÏàÍ¬,¶Ôºº×ÖµÄ±àÂë²»Í¬,unicodeµÄ±àÂë¸úÇ°ÃæÈıÏî¶¼²»Í¬
 	       System.out.println(b.length);
-	       //æ‰“å°é»˜è®¤ç¼–ç 
+	       //´òÓ¡Ä¬ÈÏ±àÂë
 	       for (byte c : b) {
 	    	   System.out.print(c+",\t");
 	       }
 	       System.out.println();
-	       //æ‰“å°GBKç¼–ç 
-	       System.out.println("GBKç¼–ç æ ¼å¼:");
+	       //´òÓ¡GBK±àÂë
+	       System.out.println("GBK±àÂë¸ñÊ½:");
 	       try {
 			b = t.getBytes("GBK");
 		} catch (UnsupportedEncodingException e) {
@@ -53,8 +53,8 @@ public static void main(String[] args) {
 	   			System.out.print(c+",\t");
 	       }
 	       System.out.println();
-	     //æ‰“å°GBKç¼–ç 
-	       System.out.println("UTF-8ç¼–ç æ ¼å¼:");
+	     //´òÓ¡GBK±àÂë
+	       System.out.println("UTF-8±àÂë¸ñÊ½:");
 	       try {
 			b = t.getBytes("UTF-8");
 		} catch (UnsupportedEncodingException e) {
@@ -66,8 +66,8 @@ public static void main(String[] args) {
 	    	   System.out.print(c+",\t");
 	       }
 	       System.out.println();
-	     //æ‰“å°GBKç¼–ç 
-	       System.out.println("ASCIIç¼–ç æ ¼å¼:");
+	     //´òÓ¡GBK±àÂë
+	       System.out.println("ASCII±àÂë¸ñÊ½:");
 	       try {
 			b = t.getBytes("ASCII");
 		} catch (UnsupportedEncodingException e) {
@@ -79,8 +79,8 @@ public static void main(String[] args) {
 	    	   System.out.print(c+",\t");
 	       }
 	       System.out.println();
-	     //æ‰“å°GBKç¼–ç 
-	       System.out.println("UNICODEç¼–ç æ ¼å¼:");
+	     //´òÓ¡GBK±àÂë
+	       System.out.println("UNICODE±àÂë¸ñÊ½:");
 	       try {
 			b = t.getBytes("UNICODE");
 		} catch (UnsupportedEncodingException e) {
