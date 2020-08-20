@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.chujian.test.R;
+import com.chujian.test2.R;
+
 
 public class MainActivityTwo extends AppCompatActivity {
 

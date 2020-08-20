@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chujian.mytest">
+    package="com.chujian.mytest3">
 
     <application>
-        <activity android:name=".gg.MainActivityds"></activity>
-        <activity android:name=".gg.MainActivitythree" />
+        <activity android:name="com.chujian.mytest.gg.MainActivityds"></activity>
+        <activity android:name="com.chujian.mytest.gg.MainActivitythree" />
     </application>
 
 </manifest>
