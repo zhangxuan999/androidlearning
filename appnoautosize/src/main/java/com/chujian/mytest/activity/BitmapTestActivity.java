@@ -24,6 +24,7 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 public class BitmapTestActivity extends AppCompatActivity implements View.OnClickListener {
 
     private LargeImageView imageView;
