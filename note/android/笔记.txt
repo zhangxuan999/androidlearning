@@ -1,0 +1,8 @@
+FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+fragmentTransaction.add(MainActivity.chujianFrameLayout, new MtaFragment());
+fragmentTransaction.addToBackStack(null);//加上这句话，可以将当前Fragment压入栈内，activity不需要处理什么就可以处理fragment出栈
+fragmentTransaction.commitAllowingStateLoss();
+
+RelativeLayout 比例
+
+约束布局比例属性：app:layout_constraintHorizontal_weight="1"
