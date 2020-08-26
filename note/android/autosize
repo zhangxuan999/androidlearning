@@ -1,0 +1,189 @@
+2020-07-09 12:11:52.653 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: designWidthInDp = 1280, designHeightInDp = 640, screenWidth = 1080, screenHeight = 2029
+2020-07-09 12:11:52.653 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: initDensity = 2.75, initScaledDensity = 2.75
+2020-07-09 12:11:53.034 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.framework.impl.view.SplashActivity used the global configuration.
+2020-07-09 12:11:53.034 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=1080, height=2029, scaledDensity=2.75, xdpi=21.43125, ydpi=422.204}
+2020-07-09 12:11:53.034 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=1080, height=2029, scaledDensity=2.75, xdpi=21.43125, ydpi=422.204}
+2020-07-09 12:11:53.036 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.framework.impl.view.SplashActivity has been adapted! 
+    SplashActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 0.843750, targetScaledDensity = 0.843750, targetDensityDpi = 135, targetXdpi = 0.843750, targetScreenWidthDp = 1280, targetScreenHeightDp = 2304
+2020-07-09 12:11:53.198 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: initScaledDensity = 2.75 on ConfigurationChanged
+2020-07-09 12:11:53.243 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.demo.activity.SplashActivity used the global configuration.
+2020-07-09 12:11:53.243 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+横屏
+2020-07-09 12:11:53.243 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:53.245 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.demo.activity.SplashActivity has been adapted! 
+    SplashActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 1.585156, targetScaledDensity = 1.585156, targetDensityDpi = 253, targetXdpi = 1.585156, targetScreenWidthDp = 1280, targetScreenHeightDp = 627
+2020-07-09 12:11:53.260 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.demo.activity.SplashActivity used the global configuration.
+2020-07-09 12:11:53.260 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:53.260 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:53.261 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.demo.activity.SplashActivity has been adapted! 
+    SplashActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 1.585156, targetScaledDensity = 1.585156, targetDensityDpi = 253, targetXdpi = 1.585156, targetScreenWidthDp = 1280, targetScreenHeightDp = 627
+2020-07-09 12:11:54.825 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.demo.activity.MainActivity used the global configuration.
+2020-07-09 12:11:54.825 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:54.825 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:54.826 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.demo.activity.MainActivity has been adapted! 
+    MainActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 1.585156, targetScaledDensity = 1.585156, targetDensityDpi = 253, targetXdpi = 1.585156, targetScreenWidthDp = 1280, targetScreenHeightDp = 627
+2020-07-09 12:11:54.873 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.demo.activity.MainActivity used the global configuration.
+2020-07-09 12:11:54.873 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:54.873 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:54.874 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.demo.activity.MainActivity has been adapted! 
+    MainActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 1.585156, targetScaledDensity = 1.585156, targetDensityDpi = 253, targetXdpi = 1.585156, targetScreenWidthDp = 1280, targetScreenHeightDp = 627
+2020-07-09 12:11:55.004 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.domestic.view.activity.MainActivity used the global configuration.
+2020-07-09 12:11:55.005 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:55.005 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:55.006 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.domestic.view.activity.MainActivity has been adapted! 
+    MainActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 1.585156, targetScaledDensity = 1.585156, targetDensityDpi = 253, targetXdpi = 1.585156, targetScreenWidthDp = 1280, targetScreenHeightDp = 627
+2020-07-09 12:11:55.029 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: com.chujian.sdk.domestic.view.activity.MainActivity used the global configuration.
+2020-07-09 12:11:55.029 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:55.029 4433-4433/com.chujian.jverify.demo W/AndroidAutoSize: displayMetrics.toString() = DisplayMetrics{density=2.75, width=2029, height=1080, scaledDensity=2.75, xdpi=40.262966, ydpi=422.204}
+2020-07-09 12:11:55.030 4433-4433/com.chujian.jverify.demo D/AndroidAutoSize: The com.chujian.sdk.domestic.view.activity.MainActivity has been adapted! 
+    MainActivity Info: isBaseOnWidth = true, designWidthInDp = 1280.000000, designWidthInSubunits = 1280.000000, targetDensity = 1.585156, targetScaledDensity = 1.585156, targetDensityDpi = 253, targetXdpi = 1.585156, targetScreenWidthDp = 1280, targetScreenHeightDp = 627
+
+华为竖屏
+07-09 10:11:09.917 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().density = 2.0
+07-09 10:11:09.917 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().densityDpi = 320
+07-09 10:11:09.918 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().xdpi = 320.0
+07-09 10:11:09.918 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().ydpi = 320.0
+07-09 10:11:09.918 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().heightPixels = 1184
+07-09 10:11:09.918 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().widthPixels = 720
+07-09 10:11:09.918 29436-29436/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().scaledDensity = 2.0
+
+
+
+小米竖屏
+2020-07-09 11:45:24.915 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().density = 2.75
+2020-07-09 11:45:24.916 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().densityDpi = 440
+2020-07-09 11:45:24.916 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().xdpi = 422.03
+2020-07-09 11:45:24.916 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().ydpi = 422.204
+2020-07-09 11:45:24.916 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().heightPixels = 2029
+2020-07-09 11:45:24.916 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().widthPixels = 1080
+2020-07-09 11:45:24.916 1572-1572/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().scaledDensity = 2.75
+
+
+锤子竖屏
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().density = 3.0
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().densityDpi = 480
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().xdpi = 403.411
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().ydpi = 403.411
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().heightPixels = 1080
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().widthPixels = 2070
+2020-07-09 16:15:07.259 6579-6579/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().scaledDensity = 2.79
+2020-07-09 16:15:07.449 6579-6579/com.chujian.ssss W/zhangxuan: button1.getWidth()720
+2020-07-09 16:15:07.449 6579-6579/com.chujian.ssss W/zhangxuan: button2.getWidth()626
+
+
+受到autosize的影响，手机转屏会影响到densityDpi
+华为横屏
+07-09 17:29:55.461 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().density = 3.3222222
+07-09 17:29:55.461 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().densityDpi = 531
+07-09 17:29:55.462 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().xdpi = 320.0
+07-09 17:29:55.462 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().ydpi = 320.0
+07-09 17:29:55.462 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().heightPixels = 720
+07-09 17:29:55.462 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().widthPixels = 1196
+07-09 17:29:55.462 32091-32091/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().scaledDensity = 3.3222222
+07-09 17:29:55.586 32091-32091/com.chujian.ssss W/zhangxuan: button1.getWidth()797
+07-09 17:29:55.586 32091-32091/com.chujian.ssss W/zhangxuan: button2.getWidth()496
+
+锤子横屏
+2020-07-09 17:28:28.548 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().density = 5.75
+2020-07-09 17:28:28.548 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().densityDpi = 920
+2020-07-09 17:28:28.548 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().xdpi = 403.411
+2020-07-09 17:28:28.548 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().ydpi = 403.411
+2020-07-09 17:28:28.548 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().heightPixels = 1080
+2020-07-09 17:28:28.549 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().widthPixels = 2070
+2020-07-09 17:28:28.549 15578-15578/com.chujian.ssss I/zhangxuan: getResources().getDisplayMetrics().scaledDensity = 5.3475
+2020-07-09 17:28:28.677 15578-15578/com.chujian.ssss W/zhangxuan: button1.getWidth()1380
+2020-07-09 17:28:28.677 15578-15578/com.chujian.ssss W/zhangxuan: button2.getWidth()626
+
+1.android屏幕碎片化严重
+2.android布局的5个单位
+DPI（Dots Per Inch，每英寸点数）就是每英寸的像素点数，数值越高当然显示越清晰，通常 与“正常”或“高”密度屏幕相比，“低”密度屏幕在给定物理区域的像素较少
+主单位
+px   ：是屏幕的像素点
+dp   ：一个基于density的抽象单位，如果一个160dpi的屏幕，1dp=1px
+sp   ：同dp相似，但还会根据用户的字体大小偏好来缩放。
+副单位：
+in    ：英寸 
+mm ：毫米
+pt    ：磅，1/72 英寸
+关系：1in = 25.4 mm
+	  1in = 72pt
+不管是主单位还是副单位，最终系统都会换算成px像素显示在手机上
+
+不管你在布局文件中填写的是什么单位，最后都会被转化为 px，系统就是通过上面的方法，将你在项目中任何地方填写的单位都转换为 px 的
+public static float applyDimension(int unit, float value,
+                                       DisplayMetrics metrics)
+    {
+        switch (unit) {
+        case COMPLEX_UNIT_PX:
+            return value;
+        case COMPLEX_UNIT_DIP:
+            return value * metrics.density;
+        case COMPLEX_UNIT_SP:
+            return value * metrics.scaledDensity;
+        case COMPLEX_UNIT_PT:
+            return value * metrics.xdpi * (1.0f/72);
+        case COMPLEX_UNIT_IN:
+            return value * metrics.xdpi;
+        case COMPLEX_UNIT_MM:
+            return value * metrics.xdpi * (1.0f/25.4f);
+        }
+        return 0;
+    }
+华为竖屏
+getDisplayMetrics().density = 2.0
+getDisplayMetrics().densityDpi = 320
+getDisplayMetrics().xdpi = 320.0
+getDisplayMetrics().ydpi = 320.0
+getDisplayMetrics().heightPixels = 1184
+getDisplayMetrics().widthPixels = 720
+getDisplayMetrics().scaledDensity = 2.0
+
+360dp
+
+小米竖屏
+getDisplayMetrics().density = 2.75
+getDisplayMetrics().densityDpi = 440
+getDisplayMetrics().xdpi = 422.03
+getDisplayMetrics().ydpi = 422.204
+getDisplayMetrics().heightPixels = 2029
+getDisplayMetrics().widthPixels = 1080
+getDisplayMetrics().scaledDensity = 2.75
+
+392.72dp
+	
+	这就引出了一个现在比较棘手的问题，大部分市面上的 Android 设备的屏幕高宽比都不一致，特别是现在大量全面屏的问世，这个问题更加严重，不同厂商推出的全面屏手机的屏幕高宽比都可能不一致
+	
+	明白这个后，我再来说说 density，density 在每个设备上都是固定的，DPI / 160 = density，屏幕的总 px 宽度 / density = 屏幕的总 dp 宽度
+
+设备 1，屏幕宽度为 1080px，480DPI，屏幕总 dp 宽度为 1080 / (480 / 160) = 360dp
+设备 2，屏幕宽度为 1440px，560DPI，屏幕总 dp 宽度为 1440 / (560 / 160) = 411dp
+
+可以看到屏幕的总 dp 宽度在不同的设备上是会变化的，但是我们在布局中填写的 dp 值却是固定不变的
+
+这会导致什么呢？假设我们布局中有一个 View 的宽度为 100dp，在设备 1 中 该 View 的宽度占整个屏幕宽度的 27.8% (100 / 360 = 0.278)
+
+但在设备 2 中该 View 的宽度就只能占整个屏幕宽度的 24.3% (100 / 411 = 0.243)，可以看到这个 View 在像素越高的屏幕上，dp 值虽然没变，但是与屏幕的实际比例却发生了较大的变化，所以肉眼的观看效果，会越来越小，这就导致了传统的填写 dp 的屏幕适配方式产生了较大的误差
+
+
+
+这时我们要想完美适配，那就必须保证这个 View 在任何分辨率的屏幕上，与屏幕的比例都是相同的
+
+如果每个 View 的 dp 值是固定不变的，那我们只要保证每个设备的屏幕总 dp 宽度不变，就能保证每个 View 在所有分辨率的屏幕上与屏幕的比例都保持不变，从而完成等比例适配，并且这个屏幕总 dp 宽度如果还能保证和设计图的宽度一致的话，那我们在布局时就可以直接按照设计图上的尺寸填写 dp 值
+
+屏幕的总 px 宽度 / density = 屏幕的总 dp 宽度
+
+
+有两种类型的布局单位可以选择，一个是 主单位 (dp、sp)，一个是 副单位 (pt、in、mm)
+
+主单位: 使用 dp、sp 为单位进行布局，侵入性最低，会影响其他三方库页面、三方库控件以及系统控件的布局效果，但 AndroidAutoSize 也通过这个特性，使用 ExternalAdaptManager 实现了在不修改三方库源码的情况下适配三方库的功能
+
+副单位: 使用 pt、in、mm 为单位进行布局，侵入性高，对老项目的支持比较好，不会影响其他三方库页面、三方库控件以及系统控件的布局效果，可以彻底的屏蔽修改 density 所造成的所有未知和已知问题，但这样 AndroidAutoSize 也就无法对三方库进行适配
+
+
+由于使用副单位是为了彻底屏蔽修改 density 所造成的对三方库页面、三方库控件以及系统控件的布局效果的影响，所以在使用副单位时建议调用 UnitsManager#setSupportDP(false) 和 UnitsManager#setSupportSP(false)，关闭 AndroidAutoSize 对 dp 和 sp 的支持，
+
+如果你的项目在使用 副单位 并且关闭了对 主单位 (dp、sp) 的支持，这时 ExternalAdaptManager 对三方库的页面是不起作用的，只对自己项目中的页面起作用，除非三方库的页面也使用了副单位 (pt、in、mm) 进行布局
+其实 副单位 之所以能彻底屏蔽修改 density 所造成的对三方库页面、三方库控件以及系统控件的布局效果的影响，就是因为三方库页面、三方库控件以及系统控件基本上使用的都是 dp、sp 进行布局，所以只要 AndroidAutoSize 关闭了对 dp、sp 的支持，转而使用 副单位 进行布局，就能彻底屏蔽修改 density 所造成的对三方库页面、三方库控件以及系统控件的布局效果的影响
+
+但这也同样意味着使用 副单位 就不能适配三方库的页面了，ExternalAdaptManager 也就对三方库的页面不起作用了
+

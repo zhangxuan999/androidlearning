@@ -1,0 +1,113 @@
+	  at androidx.lifecycle.ClassesInfoCache$CallbackInfo.invokeCallbacks(ClassesInfoCache.java:185)
+	  at androidx.lifecycle.ReflectiveGenericLifecycleObserver.onStateChanged(ReflectiveGenericLifecycleObserver.java:37)
+	  at androidx.lifecycle.LifecycleRegistry$ObserverWithState.dispatchEvent(LifecycleRegistry.java:361)
+	  at androidx.lifecycle.LifecycleRegistry.backwardPass(LifecycleRegistry.java:316)
+	  at androidx.lifecycle.LifecycleRegistry.sync(LifecycleRegistry.java:334)
+	  at androidx.lifecycle.LifecycleRegistry.moveToState(LifecycleRegistry.java:145)
+	  at androidx.lifecycle.LifecycleRegistry.handleLifecycleEvent(LifecycleRegistry.java:131)
+	  at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.java:68)
+	  at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.java:144)
+	  at androidx.lifecycle.ReportFragment.onPause(ReportFragment.java:122)
+	  at android.app.Fragment.performPause(Fragment.java:2723)
+	  
+	  
+	  
+	  
+	  ReflectiveGenericLifecycleObserver
+	  
+	  
+	  livedata的setvalue触发观察者onchange
+	  
+	    java.lang.Thread.State: RUNNABLE
+	  at androidx.lifecycle.LiveData.considerNotify(LiveData.java:131)
+	  at androidx.lifecycle.LiveData.dispatchingValue(LiveData.java:149)
+	  at androidx.lifecycle.LiveData.setValue(LiveData.java:307)
+	  at androidx.lifecycle.MutableLiveData.setValue(MutableLiveData.java:50)
+	  at com.chujian.ups.mvvmtest.MyViewModel.setNum(MyViewModel.java:20)
+	  at com.chujian.ups.mvvmtest.MainActivity$2.onClick(MainActivity.java:44)
+	  at android.view.View.performClick(View.java:6615)
+	  at android.view.View.performClickInternal(View.java:6592)
+	  at android.view.View.access$3100(View.java:786)
+	  
+	  
+	  livedata 也是观察者模式，值发生变化，通知观察者，但是通知之前有activity生命周期状态判断
+	   @SuppressWarnings("unchecked")
+    private void considerNotify(ObserverWrapper observer) {
+        if (!observer.mActive) {
+            return;
+        }
+        // Check latest state b4 dispatch. Maybe it changed state but we didn't get the event yet.
+        //
+        // we still first check observer.active to keep it as the entrance for events. So even if
+        // the observer moved to an active state, if we've not received that event, we better not
+        // notify for a more predictable notification order.
+        if (!observer.shouldBeActive()) {
+            observer.activeStateChanged(false);
+            return;
+        }
+        if (observer.mLastVersion >= mVersion) {
+            return;
+        }
+        observer.mLastVersion = mVersion;
+        observer.mObserver.onChanged((T) mData);
+    }
+	
+	
+   ViewModel 生命周期是贯穿整个 activity 生命周期，包括 Activity 因旋转造成的重创建，直到 Activity 真正意义上销毁后才会结束。既然如此，用来存放数据再好不过了
+   
+   假如屏幕旋转，activity重新create，数据丢失，但是用了viewmodel则不会
+   
+   If the activity is re-created, it receives the same MyViewModel instance that was created by the first activity. When the owner activity is finished, the framework calls the ViewModel objects's onCleared() method so that it can clean up resources.
+   
+   ViewModelStore的mMap clear
+    private final HashMap<String, ViewModel> mMap = new HashMap<>();
+   
+   viewmodel清除
+   main@7607" prio=5 tid=0x2 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at com.chujian.ups.mvvmtest.MyViewModel.onCleared(MyViewModel.java:25)
+	  at androidx.lifecycle.ViewModel.clear(ViewModel.java:139)
+	  at androidx.lifecycle.ViewModelStore.clear(ViewModelStore.java:62)
+	  at androidx.activity.ComponentActivity$3.onStateChanged(ComponentActivity.java:119)
+	  at androidx.lifecycle.LifecycleRegistry$ObserverWithState.dispatchEvent(LifecycleRegistry.java:361)
+	  at androidx.lifecycle.LifecycleRegistry.backwardPass(LifecycleRegistry.java:316)
+	  at androidx.lifecycle.LifecycleRegistry.sync(LifecycleRegistry.java:334)
+	  at androidx.lifecycle.LifecycleRegistry.moveToState(LifecycleRegistry.java:145)
+	  at androidx.lifecycle.LifecycleRegistry.handleLifecycleEvent(LifecycleRegistry.java:131)
+	  at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.java:68)
+	  at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.java:144)
+	  at androidx.lifecycle.ReportFragment.onDestroy(ReportFragment.java:134)
+	  at android.app.Fragment.performDestroy(Fragment.java:2782)
+	  at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1451)
+	  at android.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1581)
+	  at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1642)
+	  at android.app.FragmentManagerImpl.dispatchMoveToState(FragmentManager.java:3051)
+	  at android.app.FragmentManagerImpl.dispatchDestroy(FragmentManager.java:3031)
+	  at android.app.FragmentController.dispatchDestroy(FragmentController.java:248)
+	  at android.app.Activity.performDestroy(Activity.java:7521)
+	  
+	  
+	  
+ Android中的scheme是一种非常好的实现机制，通过定义自己的scheme协议，可以非常方便跳转app中的各个页面；
+
+通过scheme协议，服务器可以定制化告诉App跳转那个页面，可以通过通知栏消息定制化跳转页面，可以通过H5页面跳转页面等。
+
+Android中的Scheme是一种页面内跳转协议，通过自定义Scheme协议，可以跳转到app中的任何页面。 服务器可以定制化跳转app页面 app可以通过Scheme跳转到另一个app页面 可以通过h5页面跳转app原生页面
+
+			<intent-filter>
+                <data android:scheme="uumobile"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+
+//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("uumobile://yongche/123123123?card_id=123456&num=5555")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("weixin://")));  //  打开微信
+				
+			eg：	uumobile://yongche/123123123?card_id=123456&num=5555
+				scheme: uumobile<p>
+				host: yongche<p>
+				port: -1<p>
+				path: /123123123<p>
+				params: card_id=123456&num=5555<p>
+      

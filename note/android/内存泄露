@@ -1,0 +1,138 @@
+2019-11-11 20:02:01.832 8063-8080/com.chujian.sdk:leakcanary D/LeakCanary: Analysis in progress, working on: BUILDING_LEAK_TRACE
+2019-11-11 20:02:01.834 1602-1648/system_process V/ActivityManager: Attempted to start a foreground service (ComponentInfo{com.chujian.sdk/com.squareup.leakcanary.internal.HeapAnalyzerService}) with a broken notification (no icon: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x48 color=0x00000000 vis=PRIVATE)or incomplete notification info) lackOfIcon:false autoComplemtion:true not to show in notification center
+2019-11-11 20:02:01.921 1602-1648/system_process V/ActivityManager: Attempted to start a foreground service (ComponentInfo{com.chujian.sdk/com.squareup.leakcanary.DisplayLeakService}) with a broken notification (no icon: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x48 color=0x00000000 vis=PRIVATE)or incomplete notification info) lackOfIcon:false autoComplemtion:true not to show in notification center
+2019-11-11 20:02:01.982 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: In com.chujian.sdk:1.0.1_MC:2.
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * com.chujian.sdk.activity.MainActivity has leaked:
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * static __SDK_COMMON_DATA__.!(LOGINCALLBACK)!
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * ↳ MainActivity$1.!(this$0)! (anonymous implementation of com.chujian.sdk.framework.callback.LogInCallBack)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * ↳ MainActivity
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Reference Key: dadc6d33-71b6-46c8-bc8e-2a2d9fb1792c
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Device: smartisan SMARTISAN OS105 osborn
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Android Version: 7.1.1 API: 25 LeakCanary: 1.6.3 31007b4
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Durations: watch=5025ms, gc=131ms, heap dump=1724ms, analysis=11294ms
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Details:
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Class com.chujian.sdk.chujian.common.__SDK_COMMON_DATA__
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static SWITCHACCOUNTCALLBACK = com.chujian.sdk.activity.GameActivity$2@318575552 (0x12fd13c0)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static LOGINCALLBACK = com.chujian.sdk.activity.MainActivity$1@314587200 (0x12c03840)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static CHUJIANSDKFIRSTLOGIN = com.chujian.sdk.chujian.status.FIRSTLOGIN@314587136 (0x12c03800)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static MPAGESTATUS = com.chujian.sdk.chujian.status.PAGESTATUS@314587072 (0x12c037c0)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static AUTO_LOGIN = true
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static $classOverhead = byte[122]@319330049 (0x13089701)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static isAutoLoginINIT = true
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Instance of com.chujian.sdk.activity.MainActivity$1
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static $classOverhead = byte[152]@319914337 (0x13118161)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   this$0 = com.chujian.sdk.activity.MainActivity@319086304 (0x1304dee0)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   shadow$_klass_ = com.chujian.sdk.activity.MainActivity$1
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   shadow$_monitor_ = 0
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Instance of com.chujian.sdk.activity.MainActivity
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   static $classOverhead = byte[3984]@319471617 (0x130ac001)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   buttonLogin = android.support.v7.widget.AppCompatButton@319982592 (0x13128c00)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mtaBuilder = com.chujian.mta.client.CJMTA$Builder@314621944 (0x12c0bff8)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDelegate = android.support.v7.app.AppCompatDelegateImpl@319397024 (0x13099ca0)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mResources = null
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mThemeId = 2131689479
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mCreated = true
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mFragments = android.support.v4.app.FragmentController@319501392 (0x130b3450)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mHandler = android.support.v4.app.FragmentActivity$1@319199840 (0x13069a60)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mNextCandidateRequestIndex = 0
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mPendingFragmentActivityResults = android.support.v4.util.SparseArrayCompat@319420928 (0x1309fa00)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mRequestedPermissionsFromFragment = false
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mResumed = false
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mStartedActivityFromFragment = false
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mStartedIntentSenderFromFragment = false
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mStopped = true
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mViewModelStore = null
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mExtraDataMap = android.support.v4.util.SimpleArrayMap@319419176 (0x1309f328)
+2019-11-11 20:02:01.983 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mLifecycleRegistry = android.arch.lifecycle.LifecycleRegistry@319199776 (0x13069a20)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mActionBar = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mActionModeTypeStarting = 0
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mActivityInfo = android.content.pm.ActivityInfo@319638752 (0x130d4ce0)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mActivityTransitionState = android.app.ActivityTransitionState@319325792 (0x13088660)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mApplication = com.chujian.sdk.App@316537120 (0x12ddf920)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mCalled = true
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mChangeCanvasToTranslucent = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mChangingConfigurations = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mComponent = android.content.ComponentName@316448992 (0x12dca0e0)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mConfigChangeFlags = 0
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mCurrentConfig = android.content.res.Configuration@319910240 (0x13117160)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDecor = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDefaultKeyMode = 0
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDefaultKeySsb = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDelayTime = 0
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDestroyed = true
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mDoReportFullyDrawn = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mEatKeyUpEvent = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mEmbeddedID = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mEnableDefaultActionBarUp = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mEnterTransitionListener = android.app.SharedElementCallback$1@1897725712 (0x711cff10)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mExitTransitionListener = android.app.SharedElementCallback$1@1897725712 (0x711cff10)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mFindCount = 0
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mFinished = true
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mFirstHandler = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mFragments = android.app.FragmentController@319501328 (0x130b3410)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mHandler = android.os.Handler@319199712 (0x130699e0)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mHasCurrentPermissionsRequest = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mIdent = 154938229
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mInstanceTracker = android.os.StrictMode$InstanceTracker@319501344 (0x130b3420)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mInstrumentation = android.app.Instrumentation@316288160 (0x12da2ca0)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mIntent = android.content.Intent@319885520 (0x131110d0)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mIsTargetActivity = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mLastNonConfigurationInstances = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mMainThread = android.app.ActivityThread@316179616 (0x12d884a0)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mManagedCursors = java.util.ArrayList@319419128 (0x1309f2f8)
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mManagedDialogs = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mMenuInflater = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mParent = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mReferrer = "com.chujian.sdk"
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mResultCode = 0
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mResultData = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mResumed = false
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mSearchEvent = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mSearchManager = null
+2019-11-11 20:02:01.984 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mStartedActivity = false
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mStopped = true
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTaskDescription = android.app.ActivityManager$TaskDescription@319199744 (0x13069a00)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTemporaryPause = false
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTextSetted = false
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTitle = "ChujianSDK"
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTitleColor = 0
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTitleReady = true
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mToken = android.os.BinderProxy@316453248 (0x12dcb180)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTranslucentCallback = null
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mUiThread = java.lang.Thread@1985421104 (0x76571f30)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mVisibleBehind = false
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mVisibleFromClient = true
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mVisibleFromServer = true
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mVoiceInteractor = null
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mWindow = com.android.internal.policy.PhoneWindow@318635664 (0x12fdfe90)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mWindowAdded = true
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mWindowManager = android.view.WindowManagerImpl@319419584 (0x1309f4c0)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mInflater = com.android.internal.policy.PhoneLayoutInflater@319318528 (0x13086a00)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mOverrideConfiguration = null
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mResources = android.content.res.Resources@319410992 (0x1309d330)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mTheme = android.content.res.Resources$Theme@319501664 (0x130b3560)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mThemeResource = 2131689479
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   mBase = android.app.ContextImpl@319906080 (0x13116120)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   shadow$_klass_ = com.chujian.sdk.activity.MainActivity
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: |   shadow$_monitor_ = 1073769392
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: * Excluded Refs:
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.os.Message.obj
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.os.Message.next
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.os.Message.target
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.view.inputmethod.InputMethodManager.mNextServedView
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.view.inputmethod.InputMethodManager.mServedView
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.view.inputmethod.InputMethodManager.mServedInputConnection
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.view.inputmethod.InputMethodManager.mCurRootView
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.accounts.AccountManager$AmsTask$Response.this$1
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.os.UserManager.mContext
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: com.android.internal.policy.BackdropFrameRenderer.mDecorView
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Field: android.view.Choreographer$FrameDisplayEventReceiver.mMessageQueue (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Thread:FinalizerWatchdogDaemon (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Thread:main (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Thread:LeakCanary-Heap-Dump (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Class:java.lang.ref.WeakReference (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Class:java.lang.ref.SoftReference (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Class:java.lang.ref.PhantomReference (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Class:java.lang.ref.Finalizer (always)
+2019-11-11 20:02:01.985 8063-8124/com.chujian.sdk:leakcanary D/LeakCanary: | Class:java.lang.ref.FinalizerReference (always)
+2019-11-11 20:02:02.040 1602-1602/system_process D/ZenLog: intercepted: 0|com.chujian.sdk|34657|null|10229,none
