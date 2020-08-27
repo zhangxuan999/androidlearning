@@ -1,3 +1,5 @@
+webpack和gulp对比
+
 webpack 处理各种依赖
 webpack.config.json指定入口，出口。入口是main.js，出口是dist/bundle.js
 package.json指定依赖的webpack版本，脚本

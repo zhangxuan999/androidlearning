@@ -1,0 +1,43 @@
+1.安装nodejs
+2.安装webpack npm install webpack -g
+3.安装脚手架 npm install -g @vue/cli    -g代表全局安装
+脚手架3
+vue  --version 查看vue cli版本
+
+为了使用脚手架2
+npm install @vue/cli-init  -g  安装这个可以使用脚手架2
+安装好之后 既可以创建脚手架2 也可以创建脚手架3
+
+vue init webpack my-project cli2初始化项目
+vue create my-project cli3初始化项目
+
+脚手架2
+vue init webpack vuecli2test 会创建一个vuecli2test文件夹
+-------------------------------------------------------
+runtime-only
+runtime+compiler
+先选择runtime+compiler
+
+install vue-router？ 路由
+先选择n
+
+use-eslint ？ es代码限制，即js代码做限制，要求js代码书写规范
+选择不用
+
+npm run dev 执行packge.json里的dev脚本，启动webpack-dev-server
+打开localhost:8080
+
+main.js是入口
+runtime-only和runtime+compiler  的main.js的区别
+runtime+compiler先在component里面注册，之后放到template
+runtime-only render 箭头函数
+
+vue程序运行
+runtime+compiler
+template-（解析）》ast（抽象语法树）-（编译）》render函数-》virtual dom-》真实dom即ui
+runtime-only 性能更高
+render函数-》virtual dom-》真实dom即ui
+
+runtime-only模式下.vue文件的template是由vue-template-compiler解析成render函数
+runtime-only这种方式会把所有导入的vue组件都会变成一个对象，并且对象里没有template
+-----------------------------------------------------------------------
