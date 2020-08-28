@@ -19,6 +19,9 @@ interface ICafe{
 	ICafe getCafe();
 }
 
+/**
+ * ¿à¿§·È
+ */
 class CafeReal implements ICafe{
 
 	@Override
