@@ -30,7 +30,8 @@ public static void main(String[] args) {
 			//操作系统用户使用的语言
 			System.out.println("系统默认语言:"+ System.getProperty("user.language")); //查询结果zh
 			//定义字符串包含数字和中文
-	       String t = "燕";
+//	       String t = "燕";
+	       String t ="严";
 	       //通过getBytes方法获取默认的编码
 	       System.out.println("默认编码格式:");
 	       byte[] b = t.getBytes();//ASCII,GBK,UTF-8对数字和英文字母的编码相同,对汉字的编码不同,unicode的编码跟前面三项都不同

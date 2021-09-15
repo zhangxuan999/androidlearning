@@ -3,12 +3,15 @@ package javaproject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class TestHashMap {
 	public static void main(String[] args) {
 //		HashMap<String, Person> hashMap = new HashMap<>();
 //		hashMap.put("aaa", new Person(11));
-//		hashMap.put("bbb", new Person(12));
+//		hashMap.put("aaa", new Person(12));
 //		hashMap.put(null, new Person(13));
 //		hashMap.put(null, new Person(14));
 //		hashMap.put(new String("aaa"), new Person(15));
@@ -23,21 +26,21 @@ public class TestHashMap {
 //		hsHashSet.add("aaa");
 //		hsHashSet.add(null);
 //		hsHashSet.add(null);
-//		hsHashSet.remove("aaa");
+////		hsHashSet.remove("aaa");
 //		System.out.println(hsHashSet.size());
 //
-//		System.out.println("testarraylist");
-//		ArrayList<String> al = new ArrayList<>();
-//		al.add("AAA");
-//		al.add("AAA");
-//		al.add("BBB");
-//		al.add("CCC");
-//		al.add("DDD");
-//		al.add(null);
-//		al.add(null);
-//		al.add(null);
-//		al.remove("BB");
-//		System.out.println(al.size());
+		System.out.println("testarraylist");
+		ArrayList<String> al = new ArrayList<>();
+		al.add("AAA");
+		al.add("AAA");
+		al.add("BBB");
+		al.add("CCC");
+		al.add("DDD");
+		al.add(null);
+		al.add(null);
+		al.add(null);
+//		al.remove("AAA");
+		System.out.println(al.size());
 //
 //
 //		System.out.println("testhashmap");
@@ -51,7 +54,6 @@ public class TestHashMap {
 //		System.out.println(hashMap2.size());
 //		System.out.println(hashMap2.get(twoHa).age);
 		TestHashMap1();
-	
 	}
 
 
@@ -61,6 +63,15 @@ public class TestHashMap {
 		hashMap.put(new ZZZ(1),"1111");
 
 		System.out.println(hashMap.size());
+
+		for (Map.Entry<ZZZ, String> entry : hashMap.entrySet()){
+
+		}
+		Set<Map.Entry<ZZZ, String>> entries = hashMap.entrySet();
+		for (Iterator iterator = entries.iterator();iterator.hasNext();){
+			iterator.next();
+		}
+
 	}
 
 

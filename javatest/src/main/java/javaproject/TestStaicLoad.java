@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class TestStaicLoad {
-	//static ²âÊÔ
+	//static æµ‹è¯•
 	public static void main(String[] args) {
 		// relection();
 		// try {
@@ -23,11 +23,11 @@ public class TestStaicLoad {
 		// e.printStackTrace();
 		// }
 
-		 Ani dog = new Dog(3);
-		 dog.functionA();
-		 System.out.println(dog.value);;
-		 System.out.println(dog.nonStaticValue);
-		 dog.shout();
+//		 Dog dog = new Dog(3);
+//		 dog.functionA();
+//		 System.out.println(dog.value);;
+//		 System.out.println(dog.nonStaticValue);
+//		 dog.shout();
 //		 
 		 Class c = TestStaicLoad.class;
 //		 
@@ -37,16 +37,17 @@ public class TestStaicLoad {
 //		 System.out.println(dog2.nonStaticValue);
 //		 dog2.shout();
 
-		// ÒÔÏÂÈıÖÖĞÎÊ½¶¼ÊÇ±»¶¯ÒıÓÃ
-		// ²»»á´¥·¢AniÀàµÄ³õÊ¼»¯
+		// ä»¥ä¸‹ä¸‰ç§å½¢å¼éƒ½æ˜¯è¢«åŠ¨å¼•ç”¨
+		// ä¸ä¼šè§¦å‘Aniç±»çš„åˆå§‹åŒ–
 		Ani[] array = new Ani[3];
-//		// Ö»»á´¥·¢sFatherValueËùÔÚÀàµÄ³õÊ¼»¯
-//		System.out.println(Dog.sFatherValue);
-//		// ²»»á´¥·¢DogÀàµÄ³õÊ¼»¯£¬Ò²²»»á´¥·¢AniÀàµÄ³õÊ¼»¯
+//		// åªä¼šè§¦å‘sFatherValueæ‰€åœ¨ç±»çš„åˆå§‹åŒ–
+//		System.out.println(Dog.sAniStaticvalue);
+//		// ä¸ä¼šè§¦å‘Dogç±»çš„åˆå§‹åŒ–ï¼Œä¹Ÿä¸ä¼šè§¦å‘Aniç±»çš„åˆå§‹åŒ–
 //		System.out.println(Dog.HELLO_WORLD);
 		
-		//System.out.println(Dog.value);
-		
+//		System.out.println(Dog.sDogStaticvalue);
+//		System.out.println(Dog.sDogStaticfinalvalue);
+
 
 	}
 
@@ -127,19 +128,23 @@ class Ani {
 		System.out.println("ani static yujukuai");
 	}
 
-	{
-		fatherValue = 1;
-		System.out.println("ani nonstatic yujukuai");
+	static {
+		System.out.println("ani static yujukuai222");
 	}
 
+	{
+		System.out.println("ani nonstatic yujukuai");
+	}
+	{
+		System.out.println("ani nonstatic yujukuai 222");
+	}
 	protected static void functionA() {
 		System.out.println("ani static method functionA");
 	}
 
 	public static int value = 1;
-	public static int sFatherValue = 3;
+	public static int sAniStaticvalue = 3;
 	public int nonStaticValue = 1;
-	private int fatherValue;
 
 	public void shout() {
 		System.out.println("ani");
@@ -172,12 +177,12 @@ class Dog extends Ani {
 		System.out.println("Dog create 222");
 	}
 
-	// Óï¾ä¿é
+	// è¯­å¥å—
 	{
 		System.out.println("Dog nonstatic yujukuai");
 	}
 
-	// ¾²Ì¬Óï¾ä¿é
+	// é™æ€è¯­å¥å—
 	static {
 		System.out.println("Dog static yujukuai 111");
 	}
@@ -186,19 +191,22 @@ class Dog extends Ani {
 		System.out.println("Dog static yujukuai 222");
 	}
 
-	// ¾²Ì¬·½·¨
+	// é™æ€æ–¹æ³•
 	public static void functionA() {
 		System.out.println("DOG static method functionA");
 	}
 
-	// ¾²Ì¬±äÁ¿
+	// é™æ€å˜é‡
 	public static int value = 2;
-	// ³ÉÔ±±äÁ¿
+
+	public static   int sDogStaticvalue = 4;
+	public static final  int sDogStaticfinalvalue = 5;
+	// æˆå‘˜å˜é‡
 	public int nonStaticValue = 2;
 	
 	public static final String HELLO_WORLD = "hello world";
 
-	// ³ÉÔ±·½·¨
+	// æˆå‘˜æ–¹æ³•
 	@Override
 	public void shout() {
 		// TODO Auto-generated method stub

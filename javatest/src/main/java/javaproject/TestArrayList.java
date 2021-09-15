@@ -19,6 +19,28 @@ public static void main(String[] args) {
 	alArrayList.add(9);
 	alArrayList.add(11);
 	alArrayList.add(18);
+
+	System.out.println("遍历1");
+	//方法1
+	Iterator it1 = alArrayList.iterator();
+	while(it1.hasNext()){
+		System.out.println(it1.next());
+	}
+	System.out.println("遍历2");
+	//方法2
+	for(Iterator it2 = alArrayList.iterator();it2.hasNext();){
+		System.out.println(it2.next());
+	}
+	System.out.println("遍历3");
+	//方法3
+	for(Integer tmp:alArrayList){
+		System.out.println(tmp);
+	}
+	System.out.println("遍历4");
+	//方法4
+	for(int i = 0;i < alArrayList.size(); i ++){
+		System.out.println(alArrayList.get(i));
+	}
 	delete(alArrayList);
 	
 //	int a [] = {1,2,3,4,5};

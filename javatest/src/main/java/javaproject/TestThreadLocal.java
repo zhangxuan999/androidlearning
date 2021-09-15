@@ -3,6 +3,7 @@ package javaproject;
 
 public class TestThreadLocal {
 public static void main(String[] args) {
+	//可以看到new 一个threadlocal变量，可以在不同的线程set，互相不会影响。get也是取当前线程的那个变量。
 	final ThreadLocal<String> tl1 =  new ThreadLocal<>();
 	ThreadLocal<Integer>  tl2 = new ThreadLocal<>();
 	tl1.set("aaa");

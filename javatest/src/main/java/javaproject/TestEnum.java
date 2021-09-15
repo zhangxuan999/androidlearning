@@ -22,12 +22,12 @@ public class TestEnum {
 }
 
 enum Size {
-        /**
-         *
-         */
-        SMALL("S","小号"),
-        MIDDLE("M","中号"),
-        LARGE("L","大号");
+    /**
+     *
+     */
+    SMALL("S", "小号"),
+    MIDDLE("M", "中号"),
+    LARGE("L", "大号");
 
     public String getDes() {
         return des;
@@ -38,44 +38,44 @@ enum Size {
     }
 
     private final String des;
-        private final String title;
+    private final String title;
 
-        Size(String des, String title){
-            this.des = des;
-            this.title = title;
-        }
+    Size(String des, String title) {
+        this.des = des;
+        this.title = title;
+    }
 
     /**
      * 静态方法可以根据传入的des，得到相应的枚举实例
+     *
      * @param des
      * @return
      */
-    public static Size fromDes(String des){
-            for(Size size:Size.values()){
-                if (size.getDes().equals(des)){
-                    return size;
-                }
+    public static Size fromDes(String des) {
+        for (Size size : Size.values()) {
+            if (size.getDes().equals(des)) {
+                return size;
             }
-            return null;
         }
-
-
-
+        return null;
     }
 
-enum Season{
+
+}
+
+enum Season {
     /**
      *
      */
     SPRING(3),
     SUMMER(6),
     AUTOMU(9),
-    WINTER(6);
+    WINTER(12);
 
     private final int key;
-    
 
-    Season(int k){
+
+    Season(int k) {
         this.key = k;
     }
 

@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
 
 import com.chujian.mytest.R;
-
 public class MainActivity extends AppCompatActivity {
 
 
@@ -60,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
                 Log.w("zhangxuan", "button4.getWidth()" + button4.getWidth());
             }
         });
+
+    }
+
+    void testSparstArray(){
+        SparseArray<String> sparseArray = new SparseArray<>();
+        sparseArray.put(3,"333");
+        sparseArray.put(2,"222");
+        sparseArray.put(1,"111");
+        sparseArray.put(3,"333322");
 
     }
 }

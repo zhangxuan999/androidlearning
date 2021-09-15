@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
+      <module name="androidlearning.app" target="1.8" />
+      <module name="androidlearning.appnoautosize" target="1.8" />
+      <module name="androidlearning.librarymn" target="1.8" />
+      <module name="androidlearning.libraryModulethree" target="1.8" />
+      <module name="androidlearning.libraryModuletwo" target="1.8" />
+      <module name="androidlearning.mvvmtest" target="1.8" />
+      <module name="androidlearning.mylibrarymodule4" target="1.8" />
       <module name="javatest" target="1.7" />
       <module name="learnJvava" target="1.7" />
+      <module name="mytest.app" target="1.8" />
+      <module name="mytest.appnoautosize" target="1.8" />
+      <module name="mytest.librarymn" target="1.8" />
+      <module name="mytest.libraryModulethree" target="1.8" />
+      <module name="mytest.libraryModuletwo" target="1.8" />
+      <module name="mytest.mvvmtest" target="1.8" />
+      <module name="mytest.mylibrarymodule4" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

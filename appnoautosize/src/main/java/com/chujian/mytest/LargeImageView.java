@@ -185,6 +185,9 @@ public class LargeImageView extends View
         Log.i("zhangxuan","mRect = " + mRect.toString());
     }
 
-
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+    }
 }
 
