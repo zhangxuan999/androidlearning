@@ -3,20 +3,17 @@ package com.chujian.mytest.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.AssetManager;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.BitmapRegionDecoder;
-import android.graphics.Rect;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import com.chujian.mytest.LargeImageView;
 import com.chujian.mytest.R;
-import com.chujian.ups.annotator.BindView;
+
+import com.chujian.ups.annotator.BinderView;
+import com.chujian.ups.annotator.WzkBinderView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -31,7 +28,7 @@ public class BitmapTestActivity extends AppCompatActivity implements View.OnClic
     private LargeImageView imageView;
     private Button button1;
     private Button button2;
-    @BindView(R.id.button3)
+    @BinderView(R.id.button3)
     Button button3;
 
 //    private int[][][] cache = new int[1024][1024][10];//这个占40M内存
@@ -48,8 +45,10 @@ public class BitmapTestActivity extends AppCompatActivity implements View.OnClic
 
 //        InjectHelper.inject(this);
 
-        BBKnife.bind(this);
+//        BBKnife.bind(this);
 
+        WzkBinderView.bind(this);
+        button3.setText("hahhaha");
 
         AssetManager assetManager = getResources().getAssets();
         try {

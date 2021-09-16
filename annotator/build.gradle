@@ -8,6 +8,7 @@ java {
 }
 
 dependencies {
-    compile 'com.google.auto.service:auto-service:1.0-rc2'
-    compile 'com.squareup:javapoet:1.7.0'
+    annotationProcessor "com.google.auto.service:auto-service:1.0-rc4"
+    compileOnly "com.google.auto.service:auto-service:1.0-rc4"
+    api "com.squareup:javapoet:1.10.0"
 }
