@@ -12,6 +12,7 @@ import android.widget.Button;
 import com.chujian.mytest.LargeImageView;
 import com.chujian.mytest.R;
 
+import com.chujian.mytest.threadpool.ThreadPoolUtils;
 import com.chujian.ups.annotator.BinderView;
 import com.chujian.ups.annotator.WzkBinderView;
 
@@ -31,6 +32,9 @@ public class BitmapTestActivity extends AppCompatActivity implements View.OnClic
     @BinderView(R.id.button3)
     Button button3;
 
+    @BinderView(R.id.button4)
+    Button button4;
+
 //    private int[][][] cache = new int[1024][1024][10];//这个占40M内存
 
     @Override
@@ -49,6 +53,7 @@ public class BitmapTestActivity extends AppCompatActivity implements View.OnClic
 
         WzkBinderView.bind(this);
         button3.setText("hahhaha");
+        button4.setOnClickListener(this);
 
         AssetManager assetManager = getResources().getAssets();
         try {
@@ -110,6 +115,23 @@ public class BitmapTestActivity extends AppCompatActivity implements View.OnClic
                         EventBus.getDefault().post(new EventBusMessage(2,"message two"));
                     }
                 }).start();
+                break;
+
+            case R.id.button4:
+                for (int i =0;i<10;i++) {
+                    ThreadPoolUtils.getInstance().runSubThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Log.i("zhangxuan", Thread.currentThread().getId() + "start");
+                            try {
+                                Thread.sleep(5000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            Log.i("zhangxuan", Thread.currentThread().getId() + "end");
+                        }
+                    });
+                }
                 break;
             default:
                 break;
