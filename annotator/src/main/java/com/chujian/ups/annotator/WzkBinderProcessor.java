@@ -45,16 +45,19 @@ public class WzkBinderProcessor extends AbstractProcessor {
     @Override
     public synchronized void init(ProcessingEnvironment processingEnvironment) {
         super.init(processingEnvironment);
+        
         //该方法会被注解处理工具调用，其中的processingEnvironment中会提供很多有用的类：Elements, Types and Filer
         typeUtils = processingEnvironment.getTypeUtils();
         elementUtils = processingEnvironment.getElementUtils();
         filer = processingEnvironment.getFiler();
         messager = processingEnvironment.getMessager();
+        log("zhangxuan init");
 
     }
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
+        log("zhangxuan process");
         //该方法相当于java应用程序的main()方法。这里会扫描、编译、处理我们的自定义的注解
         Set<? extends Element> elements = roundEnvironment.getElementsAnnotatedWith(BinderView.class);
         System.out.println(elements.size());
@@ -154,5 +157,9 @@ public class WzkBinderProcessor extends AbstractProcessor {
 
     private void error(Element e, String msg, Object... args) {
         messager.printMessage(Diagnostic.Kind.ERROR, String.format(msg, args), e);
+    }
+
+    private void log(String msg) {
+        messager.printMessage(Diagnostic.Kind.WARNING, msg);
     }
 }
